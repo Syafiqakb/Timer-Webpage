@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width-device-width, initisl-scale=1.0">
+        <title>Time</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="current-time"></h1>
+            <div class="quotes">
+                <p>In progress</p>
+                <img src="cons.png">
+            </div>
+        </div>
+    <script>
+        let time = document.getElementById("current-time");
+
+        setInterval(() =>{
+            let d = new Date();
+            time.innerHTML = d.toLocaleTimeString();
+        },1000)
+    </script>
+    </body>
+</html>
