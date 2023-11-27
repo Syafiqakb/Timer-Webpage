@@ -9,18 +9,9 @@
         <div class="container">
             <h1 id="current-time"></h1>
             <div class="quotes">
-                <p>In progress</p>
-                <img src="cons.png">
-                <img src="images.png">
+                <p>Local Time</p>
             </div>
         </div>
-    <script>
-        let time = document.getElementById("current-time");
-
-        setInterval(() =>{
-            let d = new Date();
-            time.innerHTML = d.toLocaleTimeString();
-        },1000)
-    </script>
+        <script src="time.js"></script>
     </body>
 </html>
